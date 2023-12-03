@@ -6,6 +6,7 @@ import { AuthContext } from "./AuthContext";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Dashboard from "./Dashboard";
+import ComplaintPage from "./ComplaintPage";
 
 function App() {
   const [authState, setAuthState] = useState(false);
@@ -43,6 +44,7 @@ function App() {
             <Route path="/" element={<Registration />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/complaint" element={<ComplaintPage />} />
           </Routes>
         </div>
       </Router>
