@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Dashboard from "./Dashboard";
 import ComplaintPage from "./ComplaintPage";
+import FeedbackPage from "./FeedbackPage";
 
 function App() {
   const [authState, setAuthState] = useState(false);
@@ -45,11 +46,11 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/complaint" element={<ComplaintPage />} />
+            <Route path="/feedback" element={<FeedbackPage />} />
           </Routes>
         </div>
       </Router>
     </AuthContext.Provider>
   );
 }
-
 export default App;
