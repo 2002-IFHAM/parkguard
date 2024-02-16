@@ -8,6 +8,7 @@ import axios from "axios";
 import Dashboard from "./Dashboard";
 import ComplaintPage from "./ComplaintPage";
 import FeedbackPage from "./FeedbackPage";
+import Profile from "./Profile";
 
 function App() {
   const [authState, setAuthState] = useState(false);
@@ -47,6 +48,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/complaint" element={<ComplaintPage />} />
             <Route path="/feedback" element={<FeedbackPage />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </div>
       </Router>
